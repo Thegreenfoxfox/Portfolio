@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>My trips</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="tab">
+            <input id="tab-btn" name="tab-btn" type="radio" value="">
+            <label for="tab-btn">Поездки </label>
+
+        </div>
+        <div class="account">
+            <button class="account__name">Заболоцкий К.О</button>
+            <button class="account__exit" aria-label="Sign out">
+                <img src="images/Sign_out.svg" alt="Sign out" />
+            </button>
+        </div>
+    </div>
+
+</header>
+<main>
+
+    <nav class="navigation">
+        <div class ="trips">
+       <p class ="trips__label">Мои поездки</p>
+        <button class="trips__button">
+            <img src="images/Plus.svg" alt="Create new trip" /> Оформить поездку
+        </button>
+        </div>
+        <div class ="wrapper">
+        <div class ="periods">
+            <div class ="search_by_period">
+        <p class="periods__label1">Период с:</p>
+        <input class ="periods__date1" type="date" value="2024-02-22" />
+        <p class="periods__label2">по:</p>
+        <input class ="periods__date2" type="date" value="2024-02-28" />
+        <form class="search">
+            <input class ="search__input" type="text" placeholder="Искать здесь...">
+            <button class="search__button" type="submit" aria-label="Search">
+            </button>
+        </form>
+        <button class="close" type="button" class="close" aria-label="Close">
+            <img class="close__img" src="images/Close.svg" alt="Close" />
+            <p>Сбросить все</p>
+        </button>
+            </div>
+            <div class="archive">
+            <input id="show_archive" type="checkbox" checked>
+            <label for="show_archive">Показать архивные поездки </label>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div class ="container-table">
+    <table class="trips-table">
+        <thead>
+        <tr>
+            <th>№ поездки</th>
+            <th>Дата поездки</th>
+            <th>Сумма, план</th>
+            <th>Сумма, факт</th>
+            <th>Город</th>
+            <th>Статус</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="number_trip" >000115</td>
+            <td>22.02.2024 - 27.02.2024</td>
+            <td>29 400,00</td>
+            <td>29 400,00</td>
+            <td>Москва, Ярославль, Ижевск, Владимир</td>
+            <td>Документы</td>
+        </tr>
+        </tbody>
+        <tr>
+        <thead>
+        <tr>
+            <th>№ поездки</th>
+            <th>Дата поездки</th>
+            <th>Сумма, план</th>
+            <th>Сумма, факт</th>
+            <th>Город</th>
+            <th>Статус</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="number_trip">000117</td>
+            <td >22.02.2024 - 27.02.2024</td>
+            <td>29 400,00</td>
+            <td>29 400,00</td>
+            <td>Москва</td>
+            <td>Документы</td>
+        </tr>
+        </tbody>
+        <thead>
+        <tr>
+            <th>№ поездки</th>
+            <th>Дата поездки</th>
+            <th>Сумма, план</th>
+            <th>Сумма, факт</th>
+            <th>Город</th>
+            <th>Статус</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="number_trip">000074</td>
+            <td >22.02.2024 - 27.02.2024</td>
+            <td>29 400,00</td>
+            <td>29 400,00</td>
+            <td>Кременчуг-Константиновское, Петропавловск-Камчатский, Новосибирск, Волго...</td>
+            <td>Документы</td>
+        </tr>
+        </tbody>
+        <thead>
+        <tr>
+            <th>№ поездки</th>
+            <th>Дата поездки</th>
+            <th>Сумма, план</th>
+            <th>Сумма, факт</th>
+            <th>Город</th>
+            <th>Статус</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="number_trip">000115</td>
+            <td >22.02.2024 - 27.02.2024</td>
+            <td>29 400,00</td>
+            <td>29 400,00</td>
+            <td>Москва, Ярославль, Ижевск, Владимир</td>
+            <td>Документы</td>
+        </tr>
+        </tbody>
+        <thead>
+        <tr>
+            <th>№ поездки</th>
+            <th>Дата поездки</th>
+            <th>Сумма, план</th>
+            <th>Сумма, факт</th>
+            <th>Город</th>
+            <th>Статус</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="number_trip">000211</td>
+            <td >22.02.2024 - 27.02.2024</td>
+            <td>29 400,00</td>
+            <td>29 400,00</td>
+            <td>Москва, Ярославль, Ижевск, Владимир</td>
+            <td>Документы</td>
+        </tr>
+        </tbody>
+        <thead>
+        <tr>
+            <th>№ поездки</th>
+            <th>Дата поездки</th>
+            <th>Сумма, план</th>
+            <th>Сумма, факт</th>
+            <th>Город</th>
+            <th>Статус</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="number_trip">000118</td>
+            <td >22.02.2024 - 27.02.2024</td>
+            <td>29 400,00</td>
+            <td>29 400,00</td>
+            <td>Москва, Ярославль, Ижевск, Владимир</td>
+            <td>Документы</td>
+        </tr>
+        </tbody>
+        <thead>
+        <tr>
+            <th>№ поездки</th>
+            <th>Дата поездки</th>
+            <th>Сумма, план</th>
+            <th>Сумма, факт</th>
+            <th>Город</th>
+            <th>Статус</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="number_trip">000119</td>
+            <td >22.02.2024 - 27.02.2024</td>
+            <td>29 400,00</td>
+            <td>29 400,00</td>
+            <td>Москва, Ярославль, Ижевск, Владимир</td>
+            <td>Документы</td>
+        </tr>
+        </tbody>
+        <thead>
+        <tr>
+            <th>№ поездки</th>
+            <th>Дата поездки</th>
+            <th>Сумма, план</th>
+            <th>Сумма, факт</th>
+            <th>Город</th>
+            <th>Статус</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="number_trip">000120</td>
+            <td >22.02.2024 - 27.02.2024</td>
+            <td>29 400,00</td>
+            <td>29 400,00</td>
+            <td>Москва, Ярославль, Ижевск, Владимир</td>
+            <td>Документы</td>
+        </tr>
+        </tbody>
+        <thead>
+        <tr>
+            <th>№ поездки</th>
+            <th>Дата поездки</th>
+            <th>Сумма, план</th>
+            <th>Сумма, факт</th>
+            <th>Город</th>
+            <th>Статус</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="number_trip">000133</td>
+            <td >22.02.2024 - 27.02.2024</td>
+            <td>29 400,00</td>
+            <td>29 400,00</td>
+            <td>Москва, Ярославль, Ижевск, Владимир</td>
+            <td>Документы</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</main>
+</body>
+</html>
